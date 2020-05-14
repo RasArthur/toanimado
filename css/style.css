@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  
+  color: #ffffff;
+
+  font-family: 'Open Sans', sans-serif;
+
+  height: 100vh;
+
+  /* Body Background gradient */
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 5000% 1000%;
+  animation: gradient 15s ease infinite;
+
+  /* Body Background gradient */
+
+}
+
+/* Gradient animate */
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+
+  }
+
+}
+
+/* olosko */
+@media (min-width: 1000px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/* Gradient animate */
+header {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*  */
+}
+
+@keyframes animatudo{
+ 
+  100%{
+    transform: scale(1) translate(0);
+  }
+}
+
+/* menu */
+nav.menu {
+  background: transparent;
+  position: fixed;
+  top: 0;
+  border-radius: 10px;
+  transition: all .5s ease;
+
+}
+nav.menu:hover {
+  background-color: rgba(0, 0, 0, 0.719);
+  box-shadow:0px 0px 10px rgb(0, 0, 0);
+  
+ 
+
+}
+nav.menu ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+nav.menu li {
+  list-style: none;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+nav.menu a {
+  display: block;
+
+}
+
+a {
+
+  font-family: 'Poiret One', cursive;
+  background-color: #ffffff;
+  color: black;
+  text-decoration: none;
+  border: 1px white solid;
+  padding: 5px 30px;
+  border-radius: 3px;
+  transition: all .4s ease, transform 500ms;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.29);
+
+
+}
+
+a:hover {
+  background-color: rgba(0, 0, 0, 0.055);
+  color: #ffffff;
+  font-size: 11pt;
+  box-shadow: 0px 0px 10px white;
+  transform: scale(1.2);
+}
+
+
+/* menu */
+/* titulo e subtitle */
+
+h2.site-subtitle,
+h1.site-title {
+  text-align: center;
+  transition: transform 500ms;
+  
+}
+h2.site-subtitle:hover,
+h1.site-title:hover {
+  text-align: center;
+  transform: scale(2);
+}
+
+h1.site-title {
+  font-size: 25pt;
+  font-family: 'Comfortaa', cursive;
+}
+
+h2.site-subtitle {
+  font-size: 15pt;
+  font-style: italic;
+}
+
+/* titulo e subtitle */
+/* img figure*/
+figure.perfil {
+  border: 1px white solid;
+  border-radius: 50%;
+  padding: 50px;
+  background-color: whitesmoke;
+  box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.233);
+  
+  transition: all .8s;
+}
+
+figure.perfil:hover {
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.342);
+  box-shadow: 0px 0px 10px white;
+  transform: rotateZ(360deg) scale(0.8);
+}
+
+figure.perfil img {
+
+  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 150px;
+  transition: border-radius .8s, filter .4s, border 1s;
+
+}
+
+figure.perfil img:hover {
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px white;
+  border: 0px solid;
+}
+
+/* img */
+div.grid {
+  display: grid;
+  gap: ;
+}
+div.perfil{
+  transform: scale(0.1) translate(10vh);
+  animation: linear .6s animatudo forwards;
+}
+img.img-sec {
+  height: 500px;
+  width: 500px;
+  /* display: block;
+  margin-left: auto;
+  margin-right: auto; */
+
+}
+
+
+section.sec-portfolio {
+  text-align: center;
+  border: 1px white solid;
+  border-radius: 50px;
+  margin: 200px 150px;
+  padding: 25px;
+  background-color: white;
+  color: black;
+  transition: background-color .5s, color .5s;
+
+}
+
+section.sec-portfolio:hover {
+  background-color: transparent;
+  color: white;
+  text-shadow:0px 0px 10px white;
+}
+
+section.sec-portfolio p {
+  font-size: 15pt;
+}
+
+section.sec-portfolio img {
+  border-radius: 50%;
+  box-shadow:0px 0px 20px white;
+}
+
+section.sec-sobre {
+  text-align: center;
+  border: 1px white solid;
+  border-radius: 50px;
+  margin: 200px 150px;
+  padding: 25px;
+  background-color: white;
+  color: black;
+  transition: background-color .5s, color .5s;
+}
+
+section.sec-sobre:hover {
+  background-color: transparent;
+  color: white;
+  text-shadow:0px 0px 10px white;
+}
+
+section.sec-sobre p {
+  font-size: 15pt;
+}
+
+section.sec-sobre img {
+  border-radius: 50%;
+  box-shadow:0px 0px 20px white;
+}
+
+section.sec-contato {
+  text-align: center;
+  border: 1px white solid;
+  border-radius: 50px;
+  margin: 200px 150px;
+  padding: 25px;
+  background-color: white;
+  color: black;
+  transition: background-color .5s, color .5s;
+}
+
+section.sec-contato:hover, section.sec-contato:active {
+  background-color: transparent;
+  color: white;
+  text-shadow:0px 0px 10px white;
+  
+}
+
+section.sec-contato p {
+  font-size: 15pt;
+}
+
+section.sec-contato img {
+  border-bottom-left-radius:100px ;
+  border-bottom-right-radius:10px ;
+  border-top-right-radius: 100px;
+  border-top-left-radius: 10px;
+  box-shadow:0px 0px 20px white;
+
+}
+a.contact {
+  font-size: 50px;
+  margin: 10px 10px 10px 10px;
+  padding: 10px 10px 10px 10px;
+ 
+}
+a.contact:hover, a.contact:active {
+  text-shadow:0px 0px 10px rgb(255, 255, 255);
+  
+}
+
+footer p{
+  font-size: 20pt;
+  text-align: right;
+  text-shadow:0px 0px 10px rgb(255, 255, 255);
+}
